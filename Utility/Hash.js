@@ -12,7 +12,7 @@ async function hashData(text, sync) {
 
 async function comapreHashData(data, hashData) {
     const result = await bcrypt.compare(data, hashData);
-    return comapreHashData;
+    return result;
 }
 
 module.exports = {
